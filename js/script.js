@@ -29,15 +29,22 @@ burger()
 // Робимо клік на кнопку 'подробнее'.
 function scrollGo() {
     let btnGo = document.querySelectorAll('.btns-scroll')
-    let header = document.querySelector('.header')
+    
 
     if(btnGo) {
+        let header = document.querySelector('.header')
+        let nav = header.querySelector('.nav')
+
         btnGo.forEach(btn => {
             btn.addEventListener('click', function(e) {
                 e.preventDefault()
 
                 let id = this.dataset.id
                 let section = document.querySelector(`#${id}`)
+
+                if(nav.classList.contains('active')) {
+                    nav.classList.remove('active')
+                }
 
                 if(section) {
                     let scrollTop = section.getBoundingClientRect().top - (header ? header.clientHeight : 0)
