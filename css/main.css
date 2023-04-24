@@ -279,10 +279,6 @@ ul {
           box-sizing: border-box;
 }
 
-html, body {
-  overflow: hidden;
-}
-
 body {
   margin-top: 46px;
   line-height: 24px;
@@ -1248,8 +1244,8 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .main .ready-content {
-  min-height: calc(100vh - 70px);
-  margin-top: 70px;
+  min-height: calc(100vh - 53px);
+  margin-top: 53px;
   padding-bottom: 150px;
   padding-top: 41px;
   position: relative;
@@ -1257,6 +1253,7 @@ h1, h2, h3, h4, h5, h6, p {
   background-position: center;
   background-size: cover;
   color: #fff;
+  overflow: hidden;
 }
 
 .main .ready-content__cintaine {
