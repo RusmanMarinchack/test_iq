@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>тест на определение IQ</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <header class="header test">
+        <div class="header__container _container">
+            <div class="header__burger">
+                <span></span>
+            </div>
+            <div class="header__logo">
+                <a href="./index.html">
+                    <img src="./images/svg/logo.svg" alt="Logo">
+                    <span class="_text-yellow">тест на определение IQ</span>
+                </a>
+            </div>
+            <nav class="header__nav nav">
+                <div class="nav__box-close">
+                    <div class="nav__close"></div>
+                </div>
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="./index.html" class="nav__link">Главная</a></li>
+                    <li class="nav__item"><a href="./index.html#info" class="nav__link">Информация о тесте</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link active">Пройти тест</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
+
+    <main class="main">
+        <section class="main__box box">
+            <div class="box__container _container">
+                <div class="box__progres-wrapper">
+                    <div class="box__progres"></div>
+                </div>
+                <div class="box-form__inner">
+                    <form action="./ready.html" class="box__form box-form" id="box-form">
+                        <div class="box-form__question question active" id="gender">
+                            <div class="question__label">ваш пол:</div>
+                            <div class="question__inner">
+                                <div class="question__item">
+                                    <input type="radio" name="gender" id="man" value="man">
+                                    <label for="man">мужчина</label>
+                                </div>
+                                <div class="question__item">
+                                    <input type="radio" name="gender" id="woman" value="woman">
+                                    <label for="woman">женщина</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-form__question question" id="age">
+                            <div class="question__label">укажите ваш возраст: </div>
+                            <div class="question__inner">
+                                <div class="question__item">
+                                    <input type="radio" name="age" id="one" value="До 18">
+                                    <label for="one">До 18</label>
+                                </div>
+                                <div class="question__item">
+                                    <input type="radio" name="age" id="two" value="От 18 до 28">
+                                    <label for="two">От 18 до 28</label>
+                                </div>
+                                <div class="question__item">
+                                    <input type="radio" name="age" id="three" value="от 29 до 35">
+                                    <label for="three">от 29 до 35</label>
+                                </div>
+                                <div class="question__item">
+                                    <input type="radio" name="age" id="four" value="От 36">
+                                    <label for="four">От 36</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-form__question question" id="superfluous">
+                            <div class="question__label">Выберите лишнее:</div>
+                            <div class="question__inner">
+                                <div class="question__item">
+                                    <input type="radio" name="superfluous" id="house" value="Шалаш">
+                                    <label for="house">Дом </label>
+                                </div>
+                                <div class="question__item">
+                                    <input type="radio" name="superfluous" id="shack" value="Шалаш">
+                                    <label for="shack">Шалаш </label>
+                                </div>
+                                <div class="question__item">
+                                    <input type="radio" name="superfluous" id="bungalow" value="Бунгало">
+                                    <label for="bungalow">Бунгало</label>
+                                </div>
+                                <div class="question__item">
+                                    <input type="radio" name="superfluous" id="bench" value="Скамейка">
+                                    <label for="bench">Скамейка</label>
+                                </div>
+                                <div class="question__item">
+                                    <input type="radio" name="superfluous" id="ahut" value="Хижина">
+                                    <label for="ahut">Хижина</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-form__question question" id="ordinary-row">
+                            <div class="question__label">Продолжите числовой ряд: <span>18  20  24  32</span></div>
+                            <div class="question__inner">
+                                <div class="question__item">
+                                    <input type="radio" name="ordinary-row" id="row-one" value="62">
+                                    <label for="row-one">62</label>
+                                </div>
+                                <div class="question__item">
+                                    <input type="radio" name="ordinary-row" id="row-two" value="48">
+                                    <label for="row-two">48 </label>
+                                </div>
+                                <div class="question__item">
+                                    <input type="radio" name="ordinary-row" id="row-three" value="74">
+                                    <label for="row-three">74</label>
+                                </div>
+                                <div class="question__item">
+                                    <input type="radio" name="ordinary-row" id="row-four" value="57">
+                                    <label for="row-four">57 </label>
+                                </div>
+                                <div class="question__item">
+                                    <input type="radio" name="ordinary-row" id="fow-five" value="60">
+                                    <label for="fow-five">60 </label>
+                                </div>
+                                <div class="question__item">
+                                    <input type="radio" name="ordinary-row" id="row-six" value="77">
+                                    <label for="row-six">77 </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-form__question question question-colors" id="colors-1">
+                            <div class="question-colors__label">Выберите цвет, который сейчас наиболее Вам приятен:</div>
+                            <div class="question-colors__inner">
+                                <div class="question-colors__item">
+                                    <input type="radio" name="color-1" id="colors-1_one" value="#A8A8A8">
+                                    <label for="colors-1_one"></label>
+                                </div>
+                                <div class="question-colors__item">
+                                    <input type="radio" name="color-1" id="colors-1_two" value="#0000A9">
+                                    <label for="colors-1_two"></label>
+                                </div>
+                                <div class="question-colors__item">
+                                    <input type="radio" name="color-1" id="colors-1_three" value="#00A701">
+                                    <label for="colors-1_three"></label>
+                                </div>
+                                <div class="question-colors__item">
+                                    <input type="radio" name="color-1" id="colors-1_four" value="#F60100">
+                                    <label for="colors-1_four"></label>
+                                </div>
+                                <div class="question-colors__item">
+                                    <input type="radio" name="color-1" id="colors-1_five" value="#FDFF19">
+                                    <label for="colors-1_five"></label>
+                                </div>
+                                <div class="question-colors__item">
+                                    <input type="radio" name="color-1" id="colors-1_six" value="#A95403">
+                                    <label for="colors-1_six"></label>
+                                </div>
+                                <div class="question-colors__item">
+                                    <input type="radio" name="color-1" id="colors-1_seven" value="#000000">
+                                    <label for="colors-1_seven"></label>
+                                </div>
+                                <div class="question-colors__item">
+                                    <input type="radio" name="color-1" id="colors-1_eight" value="#850068">
+                                    <label for="colors-1_eight"></label>
+                                </div>
+                                <div class="question-colors__item">
+                                    <input type="radio" name="color-1" id="colors-1_nine" value="#46B2AC">
+                                    <label for="colors-1_nine"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-form__question question question-colors" id="colors-2">
+                            <div class="question-colors__label">Отдохните пару секунд, еще раз Выберите цвет, который сейчас наиболее Вам приятен:</div>
+                            <div class="question-colors__inner">
+                                <div class="question-colors__item">
+                                    <input type="radio" name="color-2" id="colors-2_one" value="#A8A8A8">
+                                    <label for="colors-2_one"></label>
+                                </div>
+                                <div class="question-colors__item">
+                                    <input type="radio" name="color-2" id="colors-2_two" value="#46B2AC">
+                                    <label for="colors-2_two"></label>
+                                </div>
+                                <div class="question-colors__item">
+                                    <input type="radio" name="color-2" id="colors-2_three" value="#A95403">
+                                    <label for="colors-2_three"></label>
+                                </div>
+                                <div class="question-colors__item">
+                                    <input type="radio" name="color-2" id="colors-2_four" value="#00A701">
+                                    <label for="colors-2_four"></label>
+                                </div>
+                                <div class="question-colors__item">
+                                    <input type="radio" name="color-2" id="colors-2_five" value="#000000">
+                                    <label for="colors-2_five"></label>
+                                </div>
+                                <div class="question-colors__item">
+                                    <input type="radio" name="color-2" id="colors-2_six" value="#F60100">
+                                    <label for="colors-2_six"></label>
+                                </div>
+                                <div class="question-colors__item">
+                                    <input type="radio" name="color-2" id="colors-2_seven" value="#850068">
+                                    <label for="colors-2_seven"></label>
+                                </div>
+                                <div class="question-colors__item">
+                                    <input type="radio" name="color-2" id="colors-2_eight" value="#FDFF19">
+                                    <label for="colors-2_eight"></label>
+                                </div>
+                                <div class="question-colors__item">
+                                    <input type="radio" name="color-2" id="colors-2_nine" value="#0000A9">
+                                    <label for="colors-2_nine"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-form__question question" id="city">
+                            <div class="question__label">Какой из городов лишний?</div>
+                            <div class="question__inner">
+                                <div class="question__item">
+                                    <input type="radio" name="ordinary-row" id="washington" value="Вашингтон">
+                                    <label for="washington">Вашингтон</label>
+                                </div>
+                                <div class="question__item">
+                                    <input type="radio" name="ordinary-row" id="london" value="Лондон">
+                                    <label for="london">Лондон </label>
+                                </div>
+                                <div class="question__item">
+                                    <input type="radio" name="ordinary-row" id="paris" value="Париж">
+                                    <label for="paris">Париж </label>
+                                </div>
+                                <div class="question__item">
+                                    <input type="radio" name="ordinary-row" id="row-three" value="Нью-Йорк">
+                                    <label for="new-york">Нью-Йорк </label>
+                                </div>
+                                <div class="question__item">
+                                    <input type="radio" name="ordinary-row" id="moscow" value="Москва">
+                                    <label for="moscow">Москва </label>
+                                </div>
+                                <div class="question__item">
+                                    <input type="radio" name="ordinary-row" id="ottawa" value="Оттава">
+                                    <label for="ottawa">Оттава</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-form__question question question-figure" id="figure">
+                            <div class="question-figure__label">Отдохните пару секунд, еще раз Выберите цвет, который сейчас наиболее Вам приятен:</div>
+                            <div class="question-figure__box-img">
+                                <img src="./images/figures.png" alt="Figures">
+                            </div>
+                            <div class="question-figure__inner">
+                                <div class="question-figure__item">
+                                    <input type="radio" name="figure" id="figure-one" value="1">
+                                    <label for="figure-one">1</label>
+                                </div>
+                                <div class="question-figure__item">
+                                    <input type="radio" name="figure" id="figure-two" value="2">
+                                    <label for="figure-two">2</label>
+                                </div>
+                                <div class="question-figure__item">
+                                    <input type="radio" name="figure" id="figure-three" value="3">
+                                    <label for="figure-three">3</label>
+                                </div>
+                                <div class="question-figure__item">
+                                    <input type="radio" name="figure" id="figurefour" value="4">
+                                    <label for="figurefour">4</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-form__question question" id="familiar">
+                            <div class="question__label">Вам привычнее и важнее:</div>
+                            <div class="question__inner">
+                                <div class="question__item">
+                                    <input type="radio" name="familiar" id="familiar-one" value="Наслаждаться каждой минутой проведенного времени">
+                                    <label for="familiar-one">Наслаждаться
+                                        каждой минутой 
+                                        проведенного времени</label>
+                                </div>
+                                <div class="question__item">
+                                    <input type="radio" name="familiar" id="familiar-two" value="Быть устремленными мыслями в будущее">
+                                    <label for="familiar-two">Быть устремленными 
+                                        мыслями в будущее</label>
+                                </div>
+                                <div class="question__item">
+                                    <input type="radio" name="familiar" id="familiar-three" value="Учитывать в ежедневной Учитывать в ежедневной 
+                                    практике прошлый опытпрактике прошлый опыт">
+                                    <label for="familiar-three">Учитывать в ежедневной 
+                                        практике прошлый опыт</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-form__question question" id="definition">
+                            <div class="question__label">Какое определение, по-Вашему, больше подходит к этому геометрическому изображению: </div>
+                            <div class="question__box-img">
+                                <img src="./images/geometric-image.png" alt="Geometric image">
+                            </div>
+                            <div class="question__inner">
+                                <div class="question__item">
+                                    <input type="radio" name="definition" id="definition-one" value="оно остроконечное">
+                                    <label for="definition-one">оно остроконечное</label>
+                                </div>
+                                <div class="question__item">
+                                    <input type="radio" name="definition" id="definition-two" value="оно устойчиво">
+                                    <label for="definition-two">оно устойчиво</label>
+                                </div>
+                                <div class="question__item">
+                                    <input type="radio" name="definition" id="definition-three" value="оно-находится в состоянии равновесия">
+                                    <label for="definition-three">оно-находится в состоянии равновесия</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-form__question question question-figure" id="logic-stars">
+                            <div class="question-figure__label">Вставьте подходящее число</div>
+                            <div class="question-figure__box-img">
+                                <img src="./images/logic-stars.png" alt="Logic stars">
+                            </div>
+                            <div class="question-figure__inner">
+                                <div class="question-figure__item">
+                                    <input type="radio" name="logic-stars" id="logic-stars-one" value="34">
+                                    <label for="logic-stars-one">34</label>
+                                </div>
+                                <div class="question-figure__item">
+                                    <input type="radio" name="logic-stars" id="logic-stars-two" value="36">
+                                    <label for="logic-stars-two">36</label>
+                                </div>
+                                <div class="question-figure__item">
+                                    <input type="radio" name="logic-stars" id="logic-stars-three" value="53">
+                                    <label for="logic-stars-three">53</label>
+                                </div>
+                                <div class="question-figure__item">
+                                    <input type="radio" name="logic-stars" id="logic-stars-four" value="44">
+                                    <label for="logic-stars-four">44</label>
+                                </div>
+                                <div class="question-figure__item">
+                                    <input type="radio" name="logic-stars" id="logic-stars-five" value="66">
+                                    <label for="logic-stars-five">66</label>
+                                </div>
+                                <div class="question-figure__item">
+                                    <input type="radio" name="logic-stars" id="logic-stars-six" value="42">
+                                    <label for="logic-stars-six">42</label>
+                                </div>
+                            </div>
+                        </div>
+    
+                        
+                        <button type="button" class="box-form__btn _btn-not-active">далее</button>
+                    </form>
+                    <div class="box-preloader">
+                        <div class="box-preloader__title">обработка результатов</div>
+                        <div class="box-preloader__box-img">
+                            <img src="./images/preloader.png" alt="Preloader">
+                        </div class="box-preloader__label">
+                        <div>Определение стиля мышления...........
+                            .... ...................................................</div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
